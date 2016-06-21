@@ -1,3 +1,5 @@
+ifneq ($(QCPATH),)
+
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -22,3 +24,5 @@ LOCAL_JNI_SHARED_LIBRARIES := libwipower_jni
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
